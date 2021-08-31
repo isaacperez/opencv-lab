@@ -1,4 +1,5 @@
 import sys
+import os
 
 from PyQt5.QtWidgets import * 
 from PyQt5.QtCore import Qt
@@ -14,6 +15,9 @@ class MainWindow(QMainWindow):
     def __init__(self): 
         super().__init__() 
 
+        # Define the icon
+        self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__), '../../media/logo.png')))
+        
         # Set the title 
         self.setWindowTitle("Hello World!") 
 
