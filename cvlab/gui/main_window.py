@@ -10,16 +10,20 @@ from . import canvas_widget
 from . import management_widget
 from . import options_widget
 
+from cvlab import constants
+
 
 class MainWindow(QMainWindow): 
     def __init__(self): 
         super().__init__() 
 
         # Define the icon
-        self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__), '../../media/logo.png')))
+        self.setWindowIcon(QtGui.QIcon(
+            os.path.join(os.path.dirname(__file__), 
+                         constants.ICON_RELATIVE_PATH)))
         
         # Set the title 
-        self.setWindowTitle("OpenCV LAB") 
+        self.setWindowTitle(constants.MAIN_WINDOW_TITLE) 
 
         # Create a central widget and set it as a central widget for the 
         # main window
@@ -35,10 +39,14 @@ class MainWindow(QMainWindow):
         self.management_widget = management_widget.Widget()
         self.options_widget = options_widget.Widget()
 
-        self.components_widget.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-        self.canvas_widget.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
-        self.management_widget.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
-        self.options_widget.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        self.components_widget.setSizePolicy(
+            QSizePolicy.Maximum, QSizePolicy.Maximum)
+        self.canvas_widget.setSizePolicy(
+            QSizePolicy.Minimum, QSizePolicy.Minimum)
+        self.management_widget.setSizePolicy(
+            QSizePolicy.Minimum, QSizePolicy.Maximum)
+        self.options_widget.setSizePolicy(
+            QSizePolicy.Maximum, QSizePolicy.Maximum)
 
         self.top_layout.addWidget(self.components_widget, 0, 0, 4, 1)
         self.top_layout.addWidget(self.canvas_widget, 0, 1, 3, 4)
@@ -49,8 +57,7 @@ class MainWindow(QMainWindow):
         self.central_widget.setLayout(self.top_layout)
 
         # Show the application maximized
-        self.show()
-        #self.showMaximized()
+        self.showMaximized()
 
 
 def run_main_window():

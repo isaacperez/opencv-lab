@@ -21,8 +21,6 @@ class Widget(QWidget):
         
         self.layout.addWidget(self.components_list)
 
-
-        print("\t", self.components_list.sizeHint())
         self.setStyleSheet("background-color: blue; border: 1px solid black;")
             
             
