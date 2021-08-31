@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![OpenCV LAB Screen Shot][product-screenshot]](https://github.com/isaacperez/opencv-lab/blob/master/media/logo.png)
+[![OpenCV LAB Screen Shot][product-screenshot]](https://github.com/isaacperez/opencv-lab/blob/master/media/screenshot.png)
 `TO DO`
 
 
@@ -122,8 +122,8 @@ Project Link: [https://github.com/isaacperez/opencv-lab](https://github.com/isaa
 [stars-url]: https://github.com/isaacperez/opencv-lab/stargazers
 [contributors-shield]: https://img.shields.io/github/contributors/isaacperez/opencv-lab
 [contributors-url]: https://github.com/isaacperez/opencv-lab/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-shield]: https://img.shields.io/github/issues/isaacperez/opencv-lab
+[issues-url]: https://github.com/isaacperez/opencv-lab/issues
 [license-shield]: https://img.shields.io/badge/license-GPL-green
 [license-url]: https://github.com/isaacperez/opencv-lab/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
