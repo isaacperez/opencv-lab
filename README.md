@@ -55,6 +55,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+[![OpenCV LAB Screen Shot][product-screenshot]](https://github.com/isaacperez/opencv-lab/blob/master/media/logo.png)
 `TO DO`
 
 
@@ -126,5 +128,5 @@ Project Link: [https://github.com/isaacperez/opencv-lab](https://github.com/isaa
 [license-url]: https://github.com/isaacperez/opencv-lab/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/isaperbor/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: media/screenshot.png
 

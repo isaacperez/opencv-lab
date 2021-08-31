@@ -19,7 +19,7 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__), '../../media/logo.png')))
         
         # Set the title 
-        self.setWindowTitle("Hello World!") 
+        self.setWindowTitle("OpenCV LAB") 
 
         # Create a central widget and set it as a central widget for the 
         # main window
@@ -35,6 +35,11 @@ class MainWindow(QMainWindow):
         self.management_widget = management_widget.Widget()
         self.options_widget = options_widget.Widget()
 
+        self.components_widget.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        self.canvas_widget.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
+        self.management_widget.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
+        self.options_widget.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+
         self.top_layout.addWidget(self.components_widget, 0, 0, 4, 1)
         self.top_layout.addWidget(self.canvas_widget, 0, 1, 3, 4)
         self.top_layout.addWidget(self.management_widget, 3, 1, 1, 5)
@@ -44,7 +49,8 @@ class MainWindow(QMainWindow):
         self.central_widget.setLayout(self.top_layout)
 
         # Show the application maximized
-        self.showMaximized()
+        self.show()
+        #self.showMaximized()
 
 
 def run_main_window():
